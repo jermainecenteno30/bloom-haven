@@ -1,0 +1,195 @@
+/* GENERAL */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #fffafc;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: #ffd6e7;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #c94f7c;
+}
+
+/* HERO */
+.hero {
+    padding: 100px 20px;
+    text-align: center;
+    background: #f9c5d1;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* BUTTONS */
+button,
+.btn {
+    background: #ff7aa8;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+button:hover,
+.btn:hover {
+    background: #e35b8c;
+}
+
+/* PRODUCTS GRID */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 30px;
+    padding: 40px;
+    justify-items: center;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    width: 100%;
+    max-width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product h3 {
+    margin-top: 10px;
+}
+
+/* CART */
+#cartItems {
+    padding: 20px;
+}
+
+#cartItems p {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* FORMS */
+form {
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 120px;
+}
+
+/* TITLES */
+h2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* FOOTER */
+footer {
+    background: #ffd6e7;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* RESPONSIVE HERO & PRODUCTS */
+@media (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+}
+
+/* CONTAINER */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Instagram-style heart */
+.heart-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0 5px;
+}
+
+.heart {
+    font-size: 24px;
+    color: #ccc; /* gray when not active */
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.heart.active {
+    color: #e0245e; /* red when liked */
+    transform: scale(1.3);
+}
